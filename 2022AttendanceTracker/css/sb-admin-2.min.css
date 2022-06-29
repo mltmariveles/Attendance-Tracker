@@ -8,6 +8,194 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+body {
+  background: rgb(99, 39, 120);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ba68c8;
+}
+
+.profile-button {
+  background: rgb(99, 39, 120);
+  box-shadow: none;
+  border: none;
+}
+
+.profile-button:hover {
+  background: #682773;
+}
+
+.profile-button:focus {
+  background: #682773;
+  box-shadow: none;
+}
+
+.profile-button:active {
+  background: #682773;
+  box-shadow: none;
+}
+
+.back:hover {
+  color: #682773;
+  cursor: pointer;
+}
+
+.labels {
+  font-size: 11px;
+}
+
+.add-experience:hover {
+  background: #ba68c8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #ba68c8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background: #334d5c;
+  font-family: "Open Sans";
+}
+
+.calendar {
+  width: 90%;
+  max-width: 1200px auto;
+  margin: 60px auto;
+  height: 100px auto;
+  overflow: hidden;
+  -webkit-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.calendar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mainHead {
+  background: rgb(78, 115, 223);
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.mainHead h1 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 0 15px 0;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+}
+
+.days {
+  float: left;
+  width: 14.2857142857%;
+  background: #6ed0f7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0 10px 0;
+}
+
+.column {
+  height: 100px;
+  position: relative;
+  float: left;
+  width: 14.2857142857%;
+  background: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-align: center;
+  color: #4e707d;
+  padding: 10px 0 10px 0;
+  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.column:hover {
+  background: #f4f4f4;
+}
+
+.start > li:last-of-type {
+  float: right;
+}
+
+.light {
+  color: #ccc;
+}
+
+.event {
+  position: absolute;
+  bottom: 3px;
+  left: -1px;
+  right: 0;
+  margin: 0 auto;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #ed6b8c;
+  width: 5px;
+  height: 5px;
+  display: block;
+}
+
+.work {
+  position: absolute;
+  bottom: 3px;
+  left: -1px;
+  right: 0;
+  margin: 0 auto;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #19dd89;
+  width: 5px;
+  height: 5px;
+  display: block;
+}
+
+.meeting {
+  position: absolute;
+  bottom: 3px;
+  left: -1px;
+  right: 0;
+  margin: 0 auto;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #00a9e0;
+  width: 5px;
+  height: 5px;
+  display: block;
+}
+
+.weekend {
+  background: #fff1f5;
+}
 .table-style .today {
   background: #2a3f54;
   color: #ffffff;
@@ -9198,7 +9386,7 @@ a:focus {
   overflow: hidden !important;
 }
 .text-xs {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 .text-lg {
   font-size: 1.2rem;
@@ -9239,7 +9427,7 @@ a:focus {
   justify-content: center;
 }
 .border-left-primary {
-  border-left: 0.25rem solid #4e73df !important;
+  border-left: 0.96rem solid #4e73df !important;
 }
 .border-bottom-primary {
   border-bottom: 0.25rem solid #4e73df !important;
@@ -9656,7 +9844,7 @@ a:focus {
     margin-right: 0.25rem;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 0.85rem;
+    font-size: 1rem;
     display: inline;
   }
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {

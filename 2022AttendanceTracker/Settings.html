@@ -28,6 +28,15 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet" />
   </head>
 
+  <link
+      href="vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
   <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -269,207 +278,186 @@
           <!-- End of Topbar -->
 
           <!-- Begin Page Content -->
-          <div class="container-fluid">
-            <!-- Page Heading -->
-            <div
-              class="d-sm-flex align-items-center justify-content-between mb-4"
-            >
-              <h1 class="h3 mb-0 text-gray-800">OVERVIEW</h1>
-            </div>
-
-            <!-- Content Row -->
-            <div class="row">
-              <!-- Earnings (Monthly) Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
-                        >
-                          LEAVES
-                        </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                          0
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Earnings (Monthly) Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-success text-uppercase mb-1"
-                        >
-                          OVERTIME APPROVED
-                        </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                          0
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <i class="fas fa-check fa-2x text-gray-300"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Earnings (Monthly) Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-info text-uppercase mb-1"
-                        >
-                          OVERTIME PENDING
-                        </div>
-                        <div class="row no-gutters align-items-center">
-                          <div class="col-auto">
-                            <div
-                              class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
-                            >
-                              0
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <i class="fas fa-clock fa-2x text-gray-300"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Pending Requests Card Example -->
-            </div>
-
+     
             <!-- Content Row -->
 
-            <div class="row">
-              <!-- Area Chart -->
-              <div class="col-xl-8 col-lg-7">
-                <div class="card shadow mb-4">
-                  <!-- Card Header - Dropdown -->
-
-                  <!-- Card Body -->
-                </div>
-              </div>
-
-              <!-- Pie Chart -->
-            </div>
-            <div class="calendar">
-              <header class="mainHead">
-                <h1>July 2022</h1>
-              </header>
-
-              <!-- days -->
-              <ul class="start">
-                <li class="days">Mon</li>
-                <li class="days">Tue</li>
-                <li class="days">Wed</li>
-                <li class="days">Thu</li>
-                <li class="days">Fri</li>
-                <li class="days">Sat</li>
-                <li class="days">Sun</li>
-              </ul>
-
-              <!-- row 27-2 -->
-              <ul class="start">
-                <li class="column light">30</li>
-                <li class="column light">31</li>
-                <li class="column light">1</li>
-                <li class="column light">2</li>
-                <li class="column light">3</li>
-                <li class="column weekend">4</li>
-                <li class="column weekend">5</li>
-              </ul>
-
-              <!-- row 3-9 -->
-              <ul class="start">
-                <li class="column">6</li>
-                <li class="column">7</li>
-                <li class="column">8</li>
-                <li class="column">9</li>
-                <li class="column">10</li>
-                <li class="column weekend">11</li>
-                <li class="column weekend">12</li>
-              </ul>
-
-              <!-- row 10-16 -->
-              <ul class="start">
-                <li class="column">13</li>
-                <li class="column">14</li>
-                <li class="column">15</li>
-                <li class="column">16</li>
-                <li class="column">17</li>
-                <li class="column weekend">18</li>
-                <li class="column weekend">19</li>
-              </ul>
-
-              <!-- row 17-23 -->
-              <ul class="start">
-                <li class="column">20</li>
-                <li class="column">21</li>
-                <li class="column">22</li>
-                <li class="column">23</li>
-                <li class="column">24</li>
-                <li class="column weekend">25</li>
-                <li class="column weekend">26</li>
-              </ul>
-
-              <!-- row 24-2 -->
-              <ul class="start">
-                <li class="column">27</li>
-                <li class="column">28</li>
-                <li class="column">29</li>
-                <li class="column">30</li>
-                <li class="column">1</li>
-                <li class="column light weekend">2</li>
-                <li class="column light weekend">3</li>
-              </ul>
-
-              <!-- row 3-9 -->
-              <ul class="start">
-                <li class="column light">4</li>
-                <li class="column light">5</li>
-                <li class="column light">6</li>
-                <li class="column light">7</li>
-                <li class="column light">8</li>
-                <li class="column light weekend">9</li>
-                <li class="column light weekend">10</li>
-              </ul>
-            </div>
-
             <!-- Content Row -->
-            <div class="row">
-              <!-- Content Column -->
-              <div class="col-lg-6 mb-4">
-                <!-- Project Card Example -->
-
-                <!-- Color System -->
-              </div>
-
-              <div class="col-lg-6 mb-4">
-                <!-- Illustrations -->
-
-                <!-- Approach -->
-              </div>
-            </div>
-          </div>
+                 	<section class=".mt-5,
+.mb-5">
+		<div class="container">
+			<div class="bg-white shadow rounded-lg d-block d-sm-flex">
+				<div class="profile-tab-nav border-right">
+					<div class="p-4">
+						<div class="img-circle text-center mb-3">
+							<img src="img/undraw_profile.svg" alt="Image" class="rounded-circle mt-5"">
+						</div>
+						<h5 class="text-center">Juan</h5>
+                           <span class="border px-5 py-1 add-experience"
+                      ><i class="fa fa-camera"></i>&nbsp;Edit Photo</span
+                    >
+					</div>
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">
+							<i class="fa fa-home text-center mr-1"></i> 
+							Account
+						</a>
+						<a class="nav-link" id="password-tab" data-toggle="pill" href="#password" role="tab" aria-controls="password" aria-selected="false">
+							<i class="fa fa-key text-center mr-1"></i> 
+							Password
+						</a>
+						<a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="false">
+							<i class="fa fa-user text-center mr-1"></i> 
+							Security
+						</a>
+						
+						<a class="nav-link" id="notification-tab" data-toggle="pill" href="#notification" role="tab" aria-controls="notification" aria-selected="false">
+							<i class="fa fa-bell text-center mr-1"></i> 
+							Notification
+						</a>
+					</div>
+				</div>
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+						<h3 class="mb-4">Account Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">First Name</label>
+								  	<input type="text" class="form-control" value="Juan" disabled>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">Last Name</label>
+								  	<input type="text" class="form-control" value="DelaCruz" disabled>
+								</div>
+							</div>
+                            
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">Email Address</label>
+								  	<input type="text" class="form-control" value="JuanDelaCruz.workbank@gmail.com">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">Phone number</label>
+								  	<input type="text" class="form-control" value="09478455055">
+								</div>
+							</div>
+                            
+						
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">Sex</label>
+								  	<input type="text" class="form-control" value="Male">
+								</div>
+							</div>
+						
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+						<h3 class="mb-4">Password Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">Old password</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">New password</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">Confirm new password</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+						<h3 class="mb-4">Security Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">Login</label>
+								  	<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label class="labels">Two-factor auth</label>
+								  	<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="recovery">
+										<label class="form-check-label" for="recovery">
+										Recovery
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+				
+					<div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+						<h3 class="mb-4">Notification Settings</h3>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="notification1">
+								<label class="form-check-label" for="notification1">
+								This site can ask to send notifications
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="notification2" >
+								<label class="form-check-label" for="notification2">
+									Don't allow this site to send notifications
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="notification3" >
+								<label class="form-check-label" for="notification3">
+								Use quieter messaging
+								</label>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+            
+        
           <!-- /.container-fluid -->
         </div>
         <!-- End of Main Content -->
@@ -543,10 +531,10 @@
     <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/datatables-demo.js"></script>
   </body>
 </html>
