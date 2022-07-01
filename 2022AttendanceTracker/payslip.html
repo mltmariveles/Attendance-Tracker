@@ -23,7 +23,25 @@
       href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet" />
   </head>
@@ -267,170 +285,340 @@
             </ul>
           </nav>
           <!-- End of Topbar -->
-
-          <!-- Begin Page Content -->
+          <div class="text-center lh-1">
+            <h6 class="fw-bold">Payslip</h6>
+            <span class="fw-normal"
+              >Payment slip for the month of June 2022:
+            </span>
+            <a
+              href="#"
+              class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
+              ><i class="fas fa-download fa-sm text-white-50"></i> Download
+              Payslip</a
+            >
+          </div>
           <div class="container mt-5 mb-5">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="text-center lh-1 mb-2">
-                <h6 class="fw-bold">Payslip</h6> <span class="fw-normal">Payment slip for the month of June 2021</span>
-            </div>
-            <div class="d-flex justify-content-end"> <span>Working Branch:ROHINI</span> </div>
-            <div class="row">
-                <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div> <span class="fw-bolder">EMP Code</span> <small class="ms-3">39124</small> </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div> <span class="fw-bolder">EMP Name</span> <small class="ms-3">Ashok</small> </div>
-                        </div>
+            <table class="mt-4 table table-bordered">
+              <tr class="bg-primary text-white">
+                <td colspan="4">WorkBank Inc</td>
+              </tr>
+              <tr>
+                <th>Name:</th>
+                <td>Juan DelaCruz</td>
+                <th>SSS:</th>
+                <td>XXXXXXXX</td>
+              </tr>
+              <!-----2 row--->
+              <tr>
+                <th>Employee ID</th>
+                <td>20190127141</td>
+                <th>TIN:</th>
+                <td>XXXXXXXX</td>
+              </tr>
+              <!------3 row---->
+              <tr>
+                <th>Position</th>
+                <td>Entry Level</td>
+                <th>PAG-IBIG</th>
+                <td>XXXXXXXX</td>
+              </tr>
+              <!------4 row---->
+              <tr>
+                <th>Department</th>
+                <td>Finance</td>
+                <th>PHILHEALTH</th>
+                <td>XXXXXXXX</td>
+              </tr>
+              <!------5 row---->
+              <tr>
+                <th>Monthly Daily Rate</th>
+                <td>500</td>
+              </tr>
+              <!------6 row---->
+            </table>
+            <tr></tr>
+            <br />
+            <table border="1">
+              <tr>
+                <th>Earning Description</th>
+                <th>Amount</th>
+                <th>Earning Description</th>
+                <th>Amount</th>
+                <th>Deductions</th>
+                <th>Amount</th>
+              </tr>
+              <tr>
+                <td>Regular Amt:</td>
+                <td>₱</td>
+                <td>Worked on LH:</td>
+                <td>₱</td>
+                <td>Withodling Ta:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td>Holiday Amt:</td>
+                <td>₱</td>
+                <td>Worked on SH:</td>
+                <td>₱</td>
+                <td>SSS & HDMF Loan:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td>SVL Amt:</td>
+                <td>₱</td>
+                <td>Worked on RD:</td>
+                <td>₱</td>
+                <td>Other Adjustment:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td>Late Amt:</td>
+                <td>₱</td>
+                <td>Regular OT:</td>
+                <td>₱</td>
+                <td>SSS-Contribution:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td>Undertime Amount:</td>
+                <td>₱</td>
+                <td>Premium OT:</td>
+                <td>₱</td>
+                <td>Philhealth Contribution:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td>Absent Amt:</td>
+                <td>₱</td>
+                <td>Night Shift Amt:</td>
+                <td>₱</td>
+                <td>HDMF Contribution:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td>Basic Adj:</td>
+                <td>₱</td>
+                <td>NS OT Amt:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Salary Adjustment:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Allowance:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Other Non-Taxable:</td>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <th>Gross Earnings</th>
+                <td>₱</td>
+                <th></th>
+                <td></td>
+                <th>Gross Deductions</th>
+                <td>₱</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><strong>NET PAY</strong></td>
+                <td>₱</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <!-- Begin Page Content -->
+          <div class="container-xl">
+            <div class="table-responsive">
+              <div class="table-wrapper">
+                <div class="table-title">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2>Payslip <b>History</b></h2>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div> <span class="fw-bolder">PF No.</span> <small class="ms-3">101523065714</small> </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div> <span class="fw-bolder">NOD</span> <small class="ms-3">28</small> </div>
-                        </div>
+                    <div class="col-sm-4">
+                      <div class="search-box">
+                        <i class="material-icons">&#xE8B6;</i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Search&hellip;"
+                        />
+                      </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div> <span class="fw-bolder">ESI No.</span> <small class="ms-3"></small> </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div> <span class="fw-bolder">Mode of Pay</span> <small class="ms-3">SBI</small> </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div> <span class="fw-bolder">Designation</span> <small class="ms-3">Marketing Staff (MK)</small> </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div> <span class="fw-bolder">Ac No.</span> <small class="ms-3">*******0701</small> </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <table class="mt-4 table table-bordered">
-                    <thead class="bg-dark text-white">
-                        <tr>
-                            <th scope="col">Earnings</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col">Deductions</th>
-                            <th scope="col">Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Basic</th>
-                            <td>16250.00</td>
-                            <td>PF</td>
-                            <td>1800.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">DA</th>
-                            <td>550.00</td>
-                            <td>ESI</td>
-                            <td>142.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">HRA</th>
-                            <td>1650.00 </td>
-                            <td>TDS</td>
-                            <td>0.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">WA</th>
-                            <td>120.00 </td>
-                            <td>LOP</td>
-                            <td>0.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">CA</th>
-                            <td>0.00 </td>
-                            <td>PT</td>
-                            <td>0.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">CCA</th>
-                            <td>0.00 </td>
-                            <td>SPL. Deduction</td>
-                            <td>500.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">MA</th>
-                            <td>3000.00</td>
-                            <td>EWF</td>
-                            <td>0.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Sales Incentive</th>
-                            <td>0.00</td>
-                            <td>CD</td>
-                            <td>0.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Leave Encashment</th>
-                            <td>0.00</td>
-                            <td colspan="2"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Holiday Wages</th>
-                            <td>500.00</td>
-                            <td colspan="2"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Special Allowance</th>
-                            <td>100.00</td>
-                            <td colspan="2"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Bonus</th>
-                            <td>1400.00</td>
-                            <td colspan="2"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Individual Incentive</th>
-                            <td>2400.00</td>
-                            <td colspan="2"></td>
-                        </tr>
-                        <tr class="border-top">
-                            <th scope="row">Total Earning</th>
-                            <td>25970.00</td>
-                            <td>Total Deductions</td>
-                            <td>2442.00</td>
-                        </tr>
-                    </tbody>
+                <table class="table table-striped table-hover table-bordered">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Name <i class="fa fa-sort"></i></th>
+                      <th>Employee Number <i class="fa fa-sort"></i></th>
+                      <th>Date <i class="fa fa-sort"></i></th>
+
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Juan DelaCruz</td>
+                      <td>20190127141</td>
+                      <td>1/29/2022</td>
+
+                      <td>
+                        <a
+                          href="#"
+                          class="view"
+                          title="View"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">&#xE417;</i></a
+                        >
+                        <a
+                          href="#"
+                          class="download"
+                          title="Download"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">file_download</i></a
+                        >
+                        <a
+                      </tr>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Juan DelaCruz</td>
+                      <td>20190127141</td>
+                      <td>2/29/2022</td>
+
+                      <td>
+                        <a
+                          href="#"
+                          class="view"
+                          title="View"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">&#xE417;</i></a
+                        >
+                        <a
+                          href="#"
+                          class="download"
+                          title="Download"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">file_download</i></a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Juan DelaCruz</td>
+                      <td>20190127141</td>
+                      <td>3/29/2022</td>
+
+                      <td>
+                        <a
+                          href="#"
+                          class="view"
+                          title="View"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">&#xE417;</i></a
+                        >
+                        <a
+                          href="#"
+                          class="download"
+                          title="Download"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">file_download</i></a
+                        >
+                        <a
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Juan DelaCruz</td>
+                      <td>20190127141</td>
+                      <td>4/29/2022</td>
+
+                      <td>
+                        <a
+                          href="#"
+                          class="view"
+                          title="View"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">&#xE417;</i></a
+                        >
+                        <a
+                          href="#"
+                          class="download"
+                          title="Download"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">file_download</i></a
+                        >
+                        <a
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Juan DelaCruz</td>
+                      <td>20190127141</td>
+                      <td>1/29/2022</td>
+
+                      <td>
+                        <a
+                          href="#"
+                          class="view"
+                          title="View"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">&#xE417;</i></a
+                        >
+                        <a
+                          href="#"
+                          class="download"
+                          title="Download"
+                          data-toggle="tooltip"
+                          ><i class="material-icons">file_download</i></a
+                        >
+                        <a
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
-            </div>
-            <div class="row">
-                <div class="col-md-4"> <br> <span class="fw-bold">Net Pay : 24528.00</span> </div>
-                <div class="border col-md-8">
-                    <div class="d-flex flex-column"> <span>In Words</span> <span>Twenty Five thousand nine hundred seventy only</span> </div>
+                <div class="clearfix">
+                  <div class="hint-text">
+                    Showing <b>5</b> out of <b>5</b> entries
+                  </div>
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <a href="#"><i class="fa fa-angle-double-left"></i></a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item active">
+                      <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link"
+                        ><i class="fa fa-angle-double-right"></i
+                      ></a>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-            <div class="d-flex justify-content-end">
-                <div class="d-flex flex-column mt-2"> <span class="fw-bolder">For Kalyan Jewellers</span> <span class="mt-4">Authorised Signatory</span> </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            <!-- Content Row -->
-
-            <!-- Content Row -->
-            <div class="row">
-              <!-- Content Column -->
-              <div class="col-lg-6 mb-4">
-                <!-- Project Card Example -->
-
-                <!-- Color System -->
-              </div>
-
-              <div class="col-lg-6 mb-4">
-                <!-- Illustrations -->
-
-                <!-- Approach -->
               </div>
             </div>
           </div>
