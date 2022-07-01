@@ -28,6 +28,12 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet" />
   </head>
 
+  <link
+      href="vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
   <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -111,7 +117,6 @@
             </div>
           </div>
         </li>
-
         <li class="nav-item">
           <a
             class="nav-link collapsed"
@@ -137,9 +142,10 @@
             </div>
           </div>
         </li>
+
         <li class="nav-item">
             <a
-              cl2ass="nav-link collapsed"
+              class="nav-link collapsed"
               href="#"
               data-toggle="collapse"
               data-target="#collapseTwo"
@@ -162,8 +168,8 @@
               </div>
             </div>
           </li>
-          <li class="nav-item">
-           <a
+           <li class="nav-item">
+            <a
               class="nav-link collapsed"
               href="#"
               data-toggle="collapse"
@@ -188,7 +194,8 @@
               </div>
             </div>
           </li>
-           <li class="nav-item">
+
+          <li class="nav-item">
             <a
               class="nav-link collapsed"
               href="#"
@@ -214,6 +221,7 @@
               </div>
             </div>
           </li>
+
           <li class="nav-item">
             <a
               class="nav-link collapsed"
@@ -375,189 +383,228 @@
           <!-- Begin Page Content -->
           <div class="container-fluid">
             <!-- Page Heading -->
-            <div class="container shadow rounded bg-white mt-5 mb-5">
-              <div class="row">
-                <div class="col-md-3 border-right">
-                  <div
-                    class="d-flex flex-column align-items-center text-center p-3 py-5"
-                  >
-                    <img
-                      class="rounded-circle mt-5"
-                      width="150px"
-                      src="img/undraw_profile.svg"
-                    />
-                    <h5 class="text-center">Juan</h5>
-                    <span> </span>
-                  </div>
-                </div>
-                <div class="col-md-5 border-right">
-                  <div class="p-3 py-5">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-3"
-                    >
-                      <h4 class="text-right">Employee Profile</h4>
-                    </div>
-                    <div class="row mt-2">
-                      <div class="col-md-6">
-                        <label class="labels">Name</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="Juan"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label class="labels">Surname</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          value=""
-                          placeholder="DelaCruz"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-12">
-                        <label class="labels">Employee Number</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="20190127141"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                      <div class="col-md-12">
-                        <label class="labels">Department</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="Finance Department"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-6">
-                        <label class="labels">Tenure</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="November 3, 2008"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label class="labels">Tenure</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          value=""
-                          placeholder="Present"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-12">
-                        <label class="labels">Email Address</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="JuanDelaCruz.workbank@gmail.com"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-12">
-                        <label class="labels">Cellphone Number</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="09478455055"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-6">
-                        <label class="labels">Sex</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="Male"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label class="labels">Birth Date</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          value=""
-                          placeholder="January 15, 1992"
-                          disabled
-                        />
-                      </div>
-                    </div>
+            <div class="container-fluid">
+              <!-- Page Heading -->
 
-                    <div class="mt-5 text-center">
-                      <a class="btn btn-primary" href="index.html"
-                        >Add Employee</a
-                      >
-                    </div>
-                  </div>
+              <!-- DataTales Example -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">
+                 All Department
+                  </h6>
+              
                 </div>
-                <div class="col-md-4">
-                  <div class="p-3 py-5">
-                    <div
-                      class="d-flex justify-content-between align-items-center experience"
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table
+                      class="table table-bordered"
+                      id="dataTable"
+                      width="100%"
+                      cellspacing="0"
                     >
-                      <span>Direct Supervisor</span>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                      <label class="labels">Direct Supervisor Name</label
-                      >
+                      <thead>
+                        <tr>
+                          <th>Department</th>
+                          <th>Head of Department</th>
+                          <th>Email</th>
+                           <th>Total Emp.</th>
+                           <th>Action</th>
 
-                      <select type="text"
-                        class="form-control"name="cars" id="cars">
-                        <option type="text"
-                        class="form-control"value="volvo">Volvo</option>
-                        <option type="text"
-                        class="form-control"value="saab">Saab</option>
-                        <option type="text"
-                        class="form-control"value="mercedes">Mercedes</option>
-                        <option type="text"
-                        class="form-control"value="audi">Audi</option>
-                      </select>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                      <label class="labels"
-                        >Direct Supervisor Employee Number</label
-                      ><input
-                        type="text"
-                        class="form-control"
-                        placeholder="20169172817"
-                        value=""
-                        disabled
-                      />
-                    </div>
+                   
+                    
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr>
+                            <th>Department</th>
+                          <th>Head of Department</th>
+                          <th>Email</th>
+                           <th>Total Emp.</th>
+                           <th>Action</th>
+                   
+                    
+                        </tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          
+                            <td>Finance</td>
+                            <td>Jose de Luna</td>
+                            <td>Jose@example.com</td>
+                            <td>100</td>
+                            <td>
+                              <center>
+                                <a href="#" class="btn btn-primary btn-primary">
+                                <i > Edit</i>
+                                </a>
+                            <a href="#" class="btn btn-secondary btn-primary">
+                                <i > View</i>
+                                </a>
+                              </center>
+                            
+                            </td>
+                        
+                        </tr>
+                        
+                        <tr>
+                          
+                            <td>Finance</td>
+                            <td>Jose de Luna</td>
+                            <td>Jose@example.com</td>
+                            <td>100</td>
+                            <td>
+                              <center>
+                                <a href="#" class="btn btn-primary btn-primary">
+                                <i > Edit</i>
+                                </a>
+                            <a href="#" class="btn btn-secondary btn-primary">
+                                <i > View</i>
+                                </a>
+                              </center>
+                            
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                          
+                            <td>Finance</td>
+                            <td>Jose de Luna</td>
+                            <td>Jose@example.com</td>
+                            <td>100</td>
+                            <td>
+                              <center>
+                                <a href="#" class="btn btn-primary btn-primary">
+                                <i > Edit</i>
+                                </a>
+                            <a href="#" class="btn btn-secondary btn-primary">
+                                <i > View</i>
+                                </a>
+                              </center>
+                            
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                          
+                            <td>Finance</td>
+                            <td>Jose de Luna</td>
+                            <td>Jose@example.com</td>
+                            <td>100</td>
+                            <td>
+                              <center>
+                                <a href="#" class="btn btn-primary btn-primary">
+                                <i > Edit</i>
+                                </a>
+                            <a href="#" class="btn btn-secondary btn-primary">
+                                <i > View</i>
+                                </a>
+                              </center>
+                            
+                            </td>
+                        
+                        </tr>
+                       <tr>
+                          
+                            <td>Finance</td>
+                            <td>Jose de Luna</td>
+                            <td>Jose@example.com</td>
+                            <td>100</td>
+                            <td>
+                              <center>
+                                <a href="#" class="btn btn-primary btn-primary">
+                                <i > Edit</i>
+                                </a>
+                            <a href="#" class="btn btn-secondary btn-primary">
+                                <i > View</i>
+                                </a>
+                              </center>
+                            
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                          
+                            <td>Finance</td>
+                            <td>Jose de Luna</td>
+                            <td>Jose@example.com</td>
+                            <td>100</td>
+                            <td>
+                              <center>
+                                <a href="#" class="btn btn-primary btn-primary">
+                                <i > Edit</i>
+                                </a>
+                            <a href="#" class="btn btn-secondary btn-primary">
+                                <i > View</i>
+                                </a>
+                              </center>
+                            
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                          
+                            <td>Finance</td>
+                            <td>Jose de Luna</td>
+                            <td>100</td>
+                            <td>Jose@example.com</td>
+                            <td>
+                              <center>
+                                <a href="#" class="btn btn-primary btn-primary">
+                                <i > Edit</i>
+                                </a>
+                            <a href="#" class="btn btn-secondary btn-primary">
+                                <i > View</i>
+                                </a>
+                              </center>
+                            
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                          
+                            <td>Finance</td>
+                            <td>Jose de Luna</td>
+                            <td>Jose@example.com</td>
+                            <td>100</td>
+                            <td>
+                              <center>
+                                <a href="#" class="btn btn-primary btn-primary">
+                                <i > Edit</i>
+                                </a>
+                            <a href="#" class="btn btn-secondary btn-primary">
+                                <i > View</i>
+                                </a>
+                              </center>
+                            
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                          
+                            <td>Finance</td>
+                            <td>Jose de Luna</td>
+                            <td>Jose@example.com</td>
+                            <td>100</td>
+                            <td>
+                              <center>
+                                <a href="#" class="btn btn-primary btn-primary">
+                                <i > Edit</i>
+                                </a>
+                            <a href="#" class="btn btn-secondary btn-primary">
+                                <i > View</i>
+                                </a>
+                              </center>
+                            
+                            </td>
+                        
+                        </tr>
+                        
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
             </div>
-
             <!-- Content Row -->
 
             <!-- Content Row -->
@@ -649,10 +696,10 @@
     <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/datatables-demo.js"></script>
   </body>
 </html>

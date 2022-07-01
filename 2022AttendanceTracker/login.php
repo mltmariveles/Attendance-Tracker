@@ -88,7 +88,7 @@ if (isset($_SESSION["login_user"]))
                                                     $pass = md5($_POST['password']);
 
                                                     $sql = "SELECT password,username FROM tbllogin WHERE email = '".$email."';";
-                                                    $query = mysqli_query($con,$sql) or die("Error".mysqli_error());
+                                                    $query = mysqli_query($con,$sql) or die("Error".mysqli_error($con));
                                                     $fetch = mysqli_fetch_assoc($query);
                                                     $dbpass = $fetch['password'];
                                                     $user = $fetch['username'];
