@@ -3,10 +3,12 @@
 session_start();
 ob_start();
 
-if (isset($_SESSION["login_user"]))
+if (isset($_SESSION["name"]))
 {
-    header("location:sampleindex.php");
+    header("location:index.php");
 }
+
+
 
 ?>
 <html lang="en">
@@ -33,10 +35,16 @@ if (isset($_SESSION["login_user"]))
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style type="text/css">
+        .errmsg{
+            font-size: 10px;
+            color: red;
+            }
+    </style>
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-primary2">
 
     <div class="container">
 
@@ -56,51 +64,48 @@ if (isset($_SESSION["login_user"]))
                                         <h1 class="h4 text-gray-900 mb-4"><span class= "clas-candidate-icon"><img src="https://uat.workbank.com/images/recruiter.svg?v=1939">Welcome Back!</h1><span>
                                     </div>
                                     <form class="user" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                                        <div class="form-group">
-                                            <input type="email" name="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address..." required>
-                                        </div>
-                                        <div class="form-group">
-                                            <input  type="password" name="password" id="txtPassword" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
-                                        
-                                        </div>
-
-
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="form-check">
-                                                    <input type="checkbox" name="remember_me" class="form-check-input subs-agree" id="signed"><label class="cls-checkbox">Keep me signed in <span class="cls-checkmark"></span></label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 text-right"><a href="forgot-password.html" aria-label="forgot password">Forgot Password?</a></div>
-                                        </div>
-                                       
-                                        <button class="btn btn-primary btn-user btn-block" type="submit" name="login" value="login"> Login </button>
-                                        <hr>
-
-                                        <?php
+                                     <?php
                                             include_once("connection.php");
+                                            
+                                            
 
+                                            
+                                                function test_input($data) 
+                                                {
+                                                $data = trim($data);
+                                                $data = stripslashes($data);
+                                                $data = htmlspecialchars($data);
+                                                return $data;
+                                                }
+                                                
                                                 if(ISSET($_POST['login'])){
+                                                    
+                                                    if(!empty($_POST['email'])&&!empty($_POST['password'])){
                                                     $email = $_POST['email'];
                                                     $pass = md5($_POST['password']);
 
                                                     $sql = "SELECT password,username FROM tbllogin WHERE email = '".$email."';";
-                                                    $query = mysqli_query($con,$sql) or die("Error".mysqli_error($con));
-                                                    $fetch = mysqli_fetch_assoc($query);
-                                                    $dbpass = $fetch['password'];
-                                                    $user = $fetch['username'];
-                                                    
-                                                    if($pass == $dbpass){
-                                                        $_SESSION['login_user'] = $user;
+                                                    $result = $con->query($sql) or die("Error".mysqli_error($con));
+
+                                                    if ($result->num_rows > 0) {
+                                                      // output data of each row
+                                                      while($row = $result->fetch_assoc()) {
+                                                        $dbpass=$row["password"];
+                                                        $user = $row["username"];
+                                                        //echo $user;
+                                                      }
+                                                      if($pass == $dbpass){
+                                                        
+                                                        $_SESSION["name"] = $user;
+                                                        //echo $_SESSION["name"];
+                                                        //for activity log
+
                                                         if (!empty($_POST["remember_me"]))
                                                         {
                                               
                                                             // Username is stored as cookie for 10 years as
                                                             // 10years * 365days * 24hrs * 60mins * 60secs
-                                                            setcookie("user_login", $name, time() +
+                                                            setcookie("user_login", $user, time() +
                                                                                 (0 * 14 * 0 *  0 * 0));
                                               
                                                             // Password is stored as cookie for 10 years as 
@@ -109,21 +114,22 @@ if (isset($_SESSION["login_user"]))
                                                                                 (10 * 365 * 24 * 60 * 60));
                                               
                                                             // After setting cookies the session variable will be set
-                                                            $_SESSION["name"] = $name;
+                                                            $_SESSION["name"] = $user;
                                               
                                                         }
                                                         else
                                                         {
-                                                            if (isset($_COOKIE["user_login"]))
+                                                            if (isset($_COOKIE["email"]))
                                                             {
-                                                                setcookie("user_login", "");
+                                                                setcookie("email", "");
                                                             }
-                                                            if (isset($_COOKIE["user_password"]))
+                                                            if (isset($_COOKIE["password"]))
                                                             {
-                                                                setcookie("user_password", "");
+                                                                setcookie("password", "");
                                                             }
                                                         }
-                                                        header("location:sampleindex.php");
+
+                                                        header("location:index.php");
                                                     }else{?>
 
                                                         <script>
@@ -131,12 +137,66 @@ if (isset($_SESSION["login_user"]))
                                                         </script>
                                                     <?php
                                                     }
-                                                   
-                                            }
+                                                    }else {
+                                                      echo "<div class='errmsg'>*Email doesn't exist</div>";
 
-
-
+                                                    }
+                                                    } 
+                                                    $con->close();
+                                                                                                                                                         
+                                        }                                            
                                         ?>
+                                        <div class="form-group">
+                                            <input type="text" name="email" class="form-control form-control-user"
+                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                                placeholder="Enter Email Address...">
+
+                                                <?php
+
+                                                if(ISSET($_POST['login'])){
+                                                //input validation
+                                                if (empty($_POST["email"])) 
+                                                {
+                                                        echo "<div class='errmsg'>*Email is required</div>";
+                                                } else {
+                                                        $email = test_input($_POST["email"]);
+                                                        // check if e-mail address is well-formed
+                                                        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
+                                                        {
+                                                            echo  "<div class='errmsg'> *Invalid email format</div>";
+                                                        }
+                                                }
+                                               } 
+                                                ?>
+                                                
+                                        </div>
+                                        <div class="form-group">
+                                            <input  type="password" name="password" class="form-control form-control-user"
+                                                id="exampleInputPassword" placeholder="Password"/>
+                                                <?php
+                                                if(ISSET($_POST['login'])){
+                                                    if (empty($_POST["password"])) 
+                                                {
+                                                        echo "<div class='errmsg'>*Password is required</div>";
+                                                } 
+                                                }
+                                            
+                                               ?>
+                                        </div>
+                                         <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="remember_me" class="form-check-input subs-agree" id="signed"><label class="cls-checkbox">Keep me signed in <span class="cls-checkmark"></span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 text-right"><a href="forgot-password.php" aria-label="forgot password">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                       
+                                        <button class="btn btn-primary btn-user btn-block" type="submit" name="login" value="login">
+                                            Login
+                                        </button>
+                                        <hr>
                                         <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"  align="center"></div>
                                             <script>
                                               function onSignIn(googleUser) {
