@@ -67,7 +67,7 @@
 
         <!-- Nav Item - Tables -->
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="employee-dashboard.html">
             <i class="fas fa-fw fa-table"></i>
             <span>Log-out</span></a
           >
@@ -89,25 +89,24 @@
             class="nav-link collapsed"
             href="#"
             data-toggle="collapse"
-            data-target="#collapseUtilities"
+            data-target="#collapseUtilities1"
             aria-expanded="true"
-            aria-controls="collapseUtilities"
+            aria-controls="collapseUtilities1"
           >
             <i class="fas fa-fw fa-file-word"></i>
             <span>Leaves</span>
           </a>
           <div
-            id="collapseUtilities"
+            id="collapseUtilities1"
             class="collapse"
             aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Options:</h6>
-              <a class="collapse-item" href="leave.html">All Leave</a>
-              <a class="collapse-item" href="#">Leave Request</a>
-              <a class="collapse-item" href="#">Upcoming leave</a>
-              <a class="collapse-item" href="#">Leave Balance</a>
+              <a class="collapse-item" href="my-leave.html">All Leave</a>
+              <a class="collapse-item" href="request-leave.html">Request Leave</a>
+              <a class="collapse-item" href="my-leave-balance.html">Leave Balance</a>
             </div>
           </div>
         </li>
@@ -132,14 +131,15 @@
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Options:</h6>
-              <a class="collapse-item" href="overtime.html">All Overtime</a>
-              <a class="collapse-item" href="#">Overtime Request</a>
+              <a class="collapse-item" href="my-overtime.html">All Overtime</a>
+              <a class="collapse-item" href="overtime-request.html">Overtime Request</a>
             </div>
           </div>
         </li>
-        <li class="nav-item">
+
+          <li class="nav-item">
             <a
-              cl2ass="nav-link collapsed"
+              class="nav-link collapsed"
               href="#"
               data-toggle="collapse"
               data-target="#collapseTwo"
@@ -157,87 +157,20 @@
             >
               <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Options:</h6>
-                <a class="collapse-item" href="payslip.html">Payslip</a>
-                <a class="collapse-item" href="salary.html">Employee Salary</a>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-           <a
-              class="nav-link collapsed"
-              href="#"
-              data-toggle="collapse"
-              data-target="#collapseThree"
-              aria-expanded="true"
-              aria-controls="collapseThree"
-            >
-              <i class="fas fa-fw fa-address-book"></i>
-              <span>Employee</span>
-            </a>
-            <div
-              id="collapseThree"
-              class="collapse"
-              aria-labelledby="headingTwo"
-              data-parent="#accordionSidebar"
-            >
-              <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Options:</h6>
-                <a class="collapse-item" href="employee.html">All Employee</a>
-                <a class="collapse-item" href="add_employee.html">Add Employee</a>
-                
-              </div>
-            </div>
-          </li>
-           <li class="nav-item">
-            <a
-              class="nav-link collapsed"
-              href="#"
-              data-toggle="collapse"
-              data-target="#collapseFour"
-              aria-expanded="true"
-              aria-controls="collapseFour"
-            >
-              <i class="fas fa-fw fa-folder"></i>
-              <span>Department</span>
-            </a>
-            <div
-              id="collapseFour"
-              class="collapse"
-              aria-labelledby="headingTwo"
-              data-parent="#accordionSidebar"
-            >
-              <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Options:</h6>
-                <a class="collapse-item" href="department.html">All Department</a>
-                <a class="collapse-item" href="add_department.html">Add Department</a>
-                
+                <a class="collapse-item" href="my-payslip.html">View Payslip</a>
+                <a class="collapse-item" href="view-payslip.html">View All Payslip</a>
               </div>
             </div>
           </li>
           <li class="nav-item">
             <a
               class="nav-link collapsed"
-              href="#"
-              data-toggle="collapse"
-              data-target="#collapseFive"
-              aria-expanded="true"
-              aria-controls="collapseFive"
+              href="my-attendance.html"
+              
             >
-              <i class="fas fa-fw fa-table"></i>
+              <i class="fas fa-fw fa-calendar"></i>
               <span>Attendance</span>
             </a>
-            <div
-              id="collapseFive"
-              class="collapse"
-              aria-labelledby="headingTwo"
-              data-parent="#accordionSidebar"
-            >
-              <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Options:</h6>
-                <a class="collapse-item" href="today_attendance.html">Today Attendance</a>
-                <a class="collapse-item" href="attendance.html">Employee Attendance</a>
-              </div>
-            </div>
           </li>
 
         <!-- Divider -->
@@ -375,27 +308,22 @@
           <!-- Begin Page Content -->
           <div class="container-fluid">
             <!-- Page Heading -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Leave</h1>
+            </div>
+
+            <!-- Content Row -->
+
+            <div class="container-fluid">
+            <!-- Page Heading -->
             <div class="container shadow rounded bg-white mt-5 mb-5">
-              <div class="row">
-                <div class="col-md-3 border-right">
-                  <div
-                    class="d-flex flex-column align-items-center text-center p-3 py-5"
-                  >
-                    <img
-                      class="rounded-circle mt-5"
-                      width="150px"
-                      src="img/undraw_profile.svg"
-                    />
-                    <h5 class="text-center">Juan</h5>
-                    <span> </span>
-                  </div>
-                </div>
-                <div class="col-md-5 border-right">
                   <div class="p-3 py-5">
                     <div
                       class="d-flex justify-content-between align-items-center mb-3"
                     >
-                      <h4 class="text-right">Employee Profile</h4>
+                      <h4 class="text-right">Request Leave</h4>
                     </div>
                     <div class="row mt-2">
                       <div class="col-md-6">
@@ -405,7 +333,8 @@
                           class="form-control"
                           placeholder="Juan"
                           value=""
-                          disabled
+                          disabled=""
+                          
                         />
                       </div>
                       <div class="col-md-6">
@@ -415,151 +344,76 @@
                           class="form-control"
                           value=""
                           placeholder="DelaCruz"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-12">
-                        <label class="labels">Employee Number</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="20190127141"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                      <div class="col-md-12">
-                        <label class="labels">Department</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="Finance Department"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-6">
-                        <label class="labels">Tenure</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="November 3, 2008"
-                          value=""
-                          disabled
+                          disabled=""
+                          
                         />
                       </div>
                       <div class="col-md-6">
-                        <label class="labels">Tenure</label
+                        <label class="labels">Employee number</label
                         ><input
                           type="text"
                           class="form-control"
                           value=""
-                          placeholder="Present"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-12">
-                        <label class="labels">Email Address</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="JuanDelaCruz.workbank@gmail.com"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-12">
-                        <label class="labels">Cellphone Number</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="09478455055"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-6">
-                        <label class="labels">Sex</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="Male"
-                          value=""
-                          disabled
+                          placeholder="0987654"
+                          disabled=""
+                          
                         />
                       </div>
                       <div class="col-md-6">
-                        <label class="labels">Birth Date</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          value=""
-                          placeholder="January 15, 1992"
-                          disabled
-                        />
-                      </div>
-                    </div>
-
-                    <div class="mt-5 text-center">
-                      <a class="btn btn-primary" href="index.html"
-                        >Add Employee</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="p-3 py-5">
-                    <div
-                      class="d-flex justify-content-between align-items-center experience"
-                    >
-                      <span>Direct Supervisor</span>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                      <label class="labels">Direct Supervisor Name</label
-                      >
-
-                      <select type="text"
-                        class="form-control"name="cars" id="cars">
+                        <label class="labels">Leave Type</label
+                        ><select type="text"
+                        class="form-control"name="leave" id="leave">
                         <option type="text"
-                        class="form-control"value="volvo">Volvo</option>
+                        class="form-control"value="">Select</option>
                         <option type="text"
-                        class="form-control"value="saab">Saab</option>
+                        class="form-control"value="Vacation leave">Vacation Leave</option>
                         <option type="text"
-                        class="form-control"value="mercedes">Mercedes</option>
+                        class="form-control"value="Sick leave">Sick Leave</option>
                         <option type="text"
-                        class="form-control"value="audi">Audi</option>
+                        class="form-control"value="Maternity/Paternity leave">Maternity/Paternity Leave</option>
+                        <option type="text"
+                        class="form-control"value="Bereavement leave">Bereavement Leave</option>
+                        <option type="text"
+                        class="form-control"value="Whole day leave">Whole day Leave</option>
+                        <option type="text"
+                        class="form-control"value="Half day leave">Half day Leave</option>
                       </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="labels">Leave Start</label
+                        ><input
+                          type="date"
+                          class="form-control"
+                          placeholder="Starting date"
+                          value=""
+                          
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="labels">Leave End</label
+                        ><input
+                          type="date"
+                          class="form-control"
+                          value=""
+                          placeholder="End date"
+                          
+                        />
+                      </div>
                     </div>
-                    <br />
-                    <div class="col-md-12">
-                      <label class="labels"
-                        >Direct Supervisor Employee Number</label
-                      ><input
-                        type="text"
-                        class="form-control"
-                        placeholder="20169172817"
-                        value=""
-                        disabled
-                      />
+                      <div class="mt-5 text-center">
+                      <a class="btn btn-primary" href="index.html"
+                        >Request Leave</a
+                      >
                     </div>
                   </div>
-                </div>
-              </div>
+            
+              
+
+
+
+
+              <!-- Pie Chart -->
             </div>
-
-            <!-- Content Row -->
-
             <!-- Content Row -->
             <div class="row">
               <!-- Content Column -->
@@ -578,6 +432,8 @@
           </div>
           <!-- /.container-fluid -->
         </div>
+      </div>
+      
         <!-- End of Main Content -->
 
         <!-- Footer -->

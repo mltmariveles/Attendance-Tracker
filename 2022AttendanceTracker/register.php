@@ -80,7 +80,7 @@
                                     $password = md5($_POST['txtPassword']);
                                     
                              
-                                    mysqli_query($con, "INSERT INTO tbllogin (username,email, password)VALUES('".$name."','".$email."','".$password."')") or die(mysqli_error());
+                                    mysqli_query($con, "INSERT INTO tbllogin (username,email, password)VALUES('".$name."','".$email."','".$password."')") or die(mysqli_error($con));
                                     echo "<h3 class='text-success'>User account registered!</h3>";
                                     header("location:login.php");
                                 }

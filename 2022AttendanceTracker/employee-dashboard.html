@@ -51,7 +51,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="employee-dashboard.html">
             <i class="fas fa-fw fa-address-book"></i>
             <span>OVERVIEW</span></a
           >
@@ -67,7 +67,7 @@
 
         <!-- Nav Item - Tables -->
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="employee-dashboard.html">
             <i class="fas fa-fw fa-table"></i>
             <span>Log-out</span></a
           >
@@ -89,25 +89,24 @@
             class="nav-link collapsed"
             href="#"
             data-toggle="collapse"
-            data-target="#collapseUtilities"
+            data-target="#collapseUtilities1"
             aria-expanded="true"
-            aria-controls="collapseUtilities"
+            aria-controls="collapseUtilities1"
           >
             <i class="fas fa-fw fa-file-word"></i>
             <span>Leaves</span>
           </a>
           <div
-            id="collapseUtilities"
+            id="collapseUtilities1"
             class="collapse"
             aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Options:</h6>
-              <a class="collapse-item" href="leave.html">All Leave</a>
-              <a class="collapse-item" href="#">Leave Request</a>
-              <a class="collapse-item" href="#">Upcoming leave</a>
-              <a class="collapse-item" href="#">Leave Balance</a>
+              <a class="collapse-item" href="my-leave.html">All Leave</a>
+              <a class="collapse-item" href="request-leave.html">Request Leave</a>
+              <a class="collapse-item" href="my-leave-balance.html">Leave Balance</a>
             </div>
           </div>
         </li>
@@ -132,14 +131,15 @@
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Options:</h6>
-              <a class="collapse-item" href="overtime.html">All Overtime</a>
-              <a class="collapse-item" href="#">Overtime Request</a>
+              <a class="collapse-item" href="my-overtime.html">All Overtime</a>
+              <a class="collapse-item" href="request-overtime.html">Overtime Request</a>
             </div>
           </div>
         </li>
-        <li class="nav-item">
+
+         <li class="nav-item">
             <a
-              cl2ass="nav-link collapsed"
+              class="nav-link collapsed"
               href="#"
               data-toggle="collapse"
               data-target="#collapseTwo"
@@ -157,89 +157,21 @@
             >
               <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Options:</h6>
-                <a class="collapse-item" href="payslip.html">Payslip</a>
-                <a class="collapse-item" href="salary.html">Employee Salary</a>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-           <a
-              class="nav-link collapsed"
-              href="#"
-              data-toggle="collapse"
-              data-target="#collapseThree"
-              aria-expanded="true"
-              aria-controls="collapseThree"
-            >
-              <i class="fas fa-fw fa-address-book"></i>
-              <span>Employee</span>
-            </a>
-            <div
-              id="collapseThree"
-              class="collapse"
-              aria-labelledby="headingTwo"
-              data-parent="#accordionSidebar"
-            >
-              <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Options:</h6>
-                <a class="collapse-item" href="employee.html">All Employee</a>
-                <a class="collapse-item" href="add_employee.html">Add Employee</a>
-                
-              </div>
-            </div>
-          </li>
-           <li class="nav-item">
-            <a
-              class="nav-link collapsed"
-              href="#"
-              data-toggle="collapse"
-              data-target="#collapseFour"
-              aria-expanded="true"
-              aria-controls="collapseFour"
-            >
-              <i class="fas fa-fw fa-folder"></i>
-              <span>Department</span>
-            </a>
-            <div
-              id="collapseFour"
-              class="collapse"
-              aria-labelledby="headingTwo"
-              data-parent="#accordionSidebar"
-            >
-              <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Options:</h6>
-                <a class="collapse-item" href="department.html">All Department</a>
-                <a class="collapse-item" href="add_department.html">Add Department</a>
-                
+                <a class="collapse-item" href="my-payslip.html">View Payslip</a>
+                <a class="collapse-item" href="view-payslip.html">View All Payslip</a>
               </div>
             </div>
           </li>
           <li class="nav-item">
             <a
               class="nav-link collapsed"
-              href="#"
-              data-toggle="collapse"
-              data-target="#collapseFive"
-              aria-expanded="true"
-              aria-controls="collapseFive"
+              href="my-attendance.html"
+              
             >
-              <i class="fas fa-fw fa-table"></i>
+              <i class="fas fa-fw fa-calendar"></i>
               <span>Attendance</span>
             </a>
-            <div
-              id="collapseFive"
-              class="collapse"
-              aria-labelledby="headingTwo"
-              data-parent="#accordionSidebar"
-            >
-              <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Options:</h6>
-                <a class="collapse-item" href="today_attendance.html">Today Attendance</a>
-                <a class="collapse-item" href="attendance.html">Employee Attendance</a>
-              </div>
-            </div>
           </li>
-
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block" />
 
@@ -375,190 +307,303 @@
           <!-- Begin Page Content -->
           <div class="container-fluid">
             <!-- Page Heading -->
-            <div class="container shadow rounded bg-white mt-5 mb-5">
-              <div class="row">
-                <div class="col-md-3 border-right">
-                  <div
-                    class="d-flex flex-column align-items-center text-center p-3 py-5"
-                  >
-                    <img
-                      class="rounded-circle mt-5"
-                      width="150px"
-                      src="img/undraw_profile.svg"
-                    />
-                    <h5 class="text-center">Juan</h5>
-                    <span> </span>
-                  </div>
-                </div>
-                <div class="col-md-5 border-right">
-                  <div class="p-3 py-5">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-3"
-                    >
-                      <h4 class="text-right">Employee Profile</h4>
-                    </div>
-                    <div class="row mt-2">
-                      <div class="col-md-6">
-                        <label class="labels">Name</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="Juan"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label class="labels">Surname</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          value=""
-                          placeholder="DelaCruz"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-12">
-                        <label class="labels">Employee Number</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="20190127141"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                      <div class="col-md-12">
-                        <label class="labels">Department</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="Finance Department"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-6">
-                        <label class="labels">Tenure</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="November 3, 2008"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label class="labels">Tenure</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          value=""
-                          placeholder="Present"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-12">
-                        <label class="labels">Email Address</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="JuanDelaCruz.workbank@gmail.com"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-12">
-                        <label class="labels">Cellphone Number</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="09478455055"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-6">
-                        <label class="labels">Sex</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          placeholder="Male"
-                          value=""
-                          disabled
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label class="labels">Birth Date</label
-                        ><input
-                          type="text"
-                          class="form-control"
-                          value=""
-                          placeholder="January 15, 1992"
-                          disabled
-                        />
-                      </div>
-                    </div>
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">OVERVIEW</h1>
+            </div>
 
-                    <div class="mt-5 text-center">
-                      <a class="btn btn-primary" href="index.html"
-                        >Add Employee</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="p-3 py-5">
-                    <div
-                      class="d-flex justify-content-between align-items-center experience"
-                    >
-                      <span>Direct Supervisor</span>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                      <label class="labels">Direct Supervisor Name</label
-                      >
+            <!-- Content Row -->
 
-                      <select type="text"
-                        class="form-control"name="cars" id="cars">
-                        <option type="text"
-                        class="form-control"value="volvo">Volvo</option>
-                        <option type="text"
-                        class="form-control"value="saab">Saab</option>
-                        <option type="text"
-                        class="form-control"value="mercedes">Mercedes</option>
-                        <option type="text"
-                        class="form-control"value="audi">Audi</option>
-                      </select>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                      <label class="labels"
-                        >Direct Supervisor Employee Number</label
-                      ><input
-                        type="text"
-                        class="form-control"
-                        placeholder="20169172817"
-                        value=""
-                        disabled
-                      />
+
+
+
+
+            <div class="row">
+              <!-- Earnings (Monthly) Card Example -->
+
+
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-success text-uppercase mb-1"
+                        >
+                          TODAY
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                         <div id="current_date"></p>
+                            <script>
+                                date = new Date();
+                                year = date.getFullYear();
+                                month = date.getMonth() + 1;
+                                day = date.getDate();
+                                hour = date.getHours();
+                                minute = date.getMinutes();
+
+
+                                document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year + "  " +hour
+                                +" :" +minute;
+                            </script>
+                        </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                        >
+                          LEAVES
+                        </div>
+                        
+                         <a class="collapse-item" href="request-leave.html">Request Leave</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                        >
+                          Overtime
+                        </div>
+                        <a class="collapse-item" href="request-overtime.html">Request Overtime</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Pending Requests Card Example -->
             </div>
 
             <!-- Content Row -->
+
+
+            <div class="row">
+              <!-- Area Chart -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card ctm-border-radius shadow-sm grow">
+                            <div class="card-header">
+<h4 class="card-title mb-0 d-inline-block">Your Upcoming Leave</h4>
+<a href="leave.html" class="d-inline-block float-right text-primary"><i class="fa fa-suitcase"></i></a>
+</div>
+                            <div class="card-body recent-activ">
+            <div class="recent-comment">
+            <a href="javascript:void(0)" class="dash-card text-danger">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
+            </div>
+            <div class="dash-card-content">
+            <h6 class="mb-0">Mon, 16 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            <hr>
+            <a href="javascript:void(0)" class="dash-card text-primary">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
+            </div>
+            <div class="dash-card-content">
+            <h6 class="mb-0">Fri, 20 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            <hr>
+            <a href="javascript:void(0)" class="dash-card text-primary">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
+            </div>
+            <div class="dash-card-content">
+            <h6 class="mb-0">Wed, 25 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            <hr>
+            <a href="javascript:void(0)" class="dash-card text-primary">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
+            </div>
+            <div class="dash-card-content">
+            <h6 class="mb-0">Fri, 27 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            <hr>
+            <a href="javascript:void(0)" class="dash-card text-primary">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
+            </div>
+            <div class="dash-card-content">
+            <h6 class="mb-0">Tue, 31 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex">
+
+            <div class="card flex-fill team-lead shadow-sm grow">
+            <div class="card-header">
+            <h4 class="card-title mb-0 d-inline-block">Your Team</h4>
+            </div>
+            <div class="card-body">
+            <div class="media mb-3">
+            <div class="e-avatar avatar-online mr-3"><img src="assets/img/profiles/img-6.jpg" alt="Profile avatar" class="img-fluid"></div>
+            <div class="media-body">
+            <h6 class="m-0">Direct Supervisor name</h6>
+            <p class="mb-0 ctm-text-sm">Direct Supervisor</p>
+            </div>
+            </div>
+            <hr>
+            <div class="media mb-3">
+            <div class="e-avatar avatar-online mr-3"><img class="img-fluid" src="assets/img/profiles/img-5.jpg" alt="Profile avatar"></div>
+            <div class="media-body">
+            <h6 class="m-0">Employee name</h6>
+            <p class="mb-0 ctm-text-sm">Design</p>
+            </div>
+            </div>
+            <hr>
+            <div class="media mb-3">
+            <div class="e-avatar avatar-online mr-3"><img src="assets/img/profiles/img-4.jpg" alt="Profile avatar" class="img-fluid"></div>
+            <div class="media-body">
+            <h6 class="m-0">Employee name</h6>
+            <p class="mb-0 ctm-text-sm">IOS</p>
+            </div>
+            </div>
+            <hr>
+            <div class="media mb-3">
+            <div class="e-avatar avatar-online mr-3"><img class="img-fluid" src="assets/img/profiles/img-3.jpg" alt="Profile avatar"></div>
+            <div class="media-body">
+            <h6 class="m-0">Employee name</h6>
+            <p class="mb-0 ctm-text-sm">Android</p>
+            </div>
+            </div>
+            <hr>
+            <div class="media">
+            <div class="e-avatar avatar-offline mr-3"><img class="img-fluid" src="assets/img/profiles/img-2.jpg" alt="Profile avatar"></div>
+            <div class="media-body">
+            <h6 class="m-0">Employee name</h6>
+            <p class="mb-0 ctm-text-sm">Business</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex">
+             <div class="calendar">
+              <header class="mainHead">
+                <h1>July 2022</h1>
+              </header>
+
+              <!-- days -->
+              <ul class="start">
+                <li class="days">Mon</li>
+                <li class="days">Tue</li>
+                <li class="days">Wed</li>
+                <li class="days">Thu</li>
+                <li class="days">Fri</li>
+                <li class="days">Sat</li>
+                <li class="days">Sun</li>
+              </ul>
+
+              <!-- row 27-2 -->
+              <ul class="start">
+                <li class="column light">30</li>
+                <li class="column light">31</li>
+                <li class="column light">1</li>
+                <li class="column light">2</li>
+                <li class="column light">3</li>
+                <li class="column weekend">4</li>
+                <li class="column weekend">5</li>
+              </ul>
+
+              <!-- row 3-9 -->
+              <ul class="start">
+                <li class="column">6</li>
+                <li class="column">7</li>
+                <li class="column">8</li>
+                <li class="column">9</li>
+                <li class="column">10</li>
+                <li class="column weekend">11</li>
+                <li class="column weekend">12</li>
+              </ul>
+
+              <!-- row 10-16 -->
+              <ul class="start">
+                <li class="column">13</li>
+                <li class="column">14</li>
+                <li class="column">15</li>
+                <li class="column">16</li>
+                <li class="column">17</li>
+                <li class="column weekend">18</li>
+                <li class="column weekend">19</li>
+              </ul>
+
+              <!-- row 17-23 -->
+              <ul class="start">
+                <li class="column">20</li>
+                <li class="column">21</li>
+                <li class="column">22</li>
+                <li class="column">23</li>
+                <li class="column">24</li>
+                <li class="column weekend">25</li>
+                <li class="column weekend">26</li>
+              </ul>
+
+              <!-- row 24-2 -->
+              <ul class="start">
+                <li class="column">27</li>
+                <li class="column">28</li>
+                <li class="column">29</li>
+                <li class="column">30</li>
+                <li class="column">1</li>
+                <li class="column light weekend">2</li>
+                <li class="column light weekend">3</li>
+              </ul>
+
+              
+
+
+
+
+              <!-- Pie Chart -->
+            </div>
+          
+           
 
             <!-- Content Row -->
             <div class="row">
@@ -578,6 +623,8 @@
           </div>
           <!-- /.container-fluid -->
         </div>
+      </div>
+      
         <!-- End of Main Content -->
 
         <!-- Footer -->

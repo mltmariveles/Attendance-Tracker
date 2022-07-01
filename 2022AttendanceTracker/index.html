@@ -89,23 +89,25 @@
             class="nav-link collapsed"
             href="#"
             data-toggle="collapse"
-            data-target="#collapseUtilities"
+            data-target="#collapseUtilities1"
             aria-expanded="true"
-            aria-controls="collapseUtilities"
+            aria-controls="collapseUtilities1"
           >
             <i class="fas fa-fw fa-file-word"></i>
-            <span>Filing</span>
+            <span>Leaves</span>
           </a>
           <div
-            id="collapseUtilities"
+            id="collapseUtilities1"
             class="collapse"
             aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Options:</h6>
-              <a class="collapse-item" href="index.html">Leaves</a>
-              <a class="collapse-item" href="index.html">Overtime</a>
+              <a class="collapse-item" href="leave.html">All Leave</a>
+              <a class="collapse-item" href="#">Leave Request</a>
+              <a class="collapse-item" href="#">Upcoming leave</a>
+              <a class="collapse-item" href="#">Leave Balance</a>
             </div>
           </div>
         </li>
@@ -115,26 +117,131 @@
             class="nav-link collapsed"
             href="#"
             data-toggle="collapse"
-            data-target="#collapseTwo"
+            data-target="#collapseUtilities2"
             aria-expanded="true"
-            aria-controls="collapseTwo"
+            aria-controls="collapseUtilities2"
           >
-            <i class="fas fa-fw fa-money-bill"></i>
-            <span>Payslip</span>
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Overtime</span>
           </a>
           <div
-            id="collapseTwo"
+            id="collapseUtilities2"
             class="collapse"
-            aria-labelledby="headingTwo"
+            aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar"
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Options:</h6>
-              <a class="collapse-item" href="index.html">View</a>
-              <a class="collapse-item" href="index.html">Download</a>
+              <a class="collapse-item" href="overtime.html">All Overtime</a>
+              <a class="collapse-item" href="#">Overtime Request</a>
             </div>
           </div>
         </li>
+
+         <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="true"
+              aria-controls="collapseTwo"
+            >
+              <i class="fas fa-fw fa-money-bill"></i>
+              <span>Payroll</span>
+            </a>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionSidebar"
+            >
+              <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Options:</h6>
+                <a class="collapse-item" href="payslip.html">Payslip</a>
+                <a class="collapse-item" href="salary.html">Employee Salary</a>
+              </div>
+            </div>
+          </li>
+         <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="true"
+              aria-controls="collapseThree"
+            >
+              <i class="fas fa-fw fa-address-book"></i>
+              <span>Employee</span>
+            </a>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionSidebar"
+            >
+              <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Options:</h6>
+                <a class="collapse-item" href="employee.html">All Employee</a>
+                <a class="collapse-item" href="add_employee.html">Add Employee</a>
+                
+              </div>
+            </div>
+          </li>
+
+
+         <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseFour"
+              aria-expanded="true"
+              aria-controls="collapseFour"
+            >
+              <i class="fas fa-fw fa-folder"></i>
+              <span>Department</span>
+            </a>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionSidebar"
+            >
+              <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Options:</h6>
+                <a class="collapse-item" href="department.html">All Department</a>
+                <a class="collapse-item" href="add-department.html">Add Department</a>
+                
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseFive"
+              aria-expanded="true"
+              aria-controls="collapseFive"
+            >
+              <i class="fas fa-fw fa-table"></i>
+              <span>Attendance</span>
+            </a>
+            <div
+              id="collapseFive"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionSidebar"
+            >
+              <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Options:</h6>
+                <a class="collapse-item" href="my-attendance.html">Today Attendance</a>
+                <a class="collapse-item" href="attendance.html">Employee Attendance</a>
+              </div>
+            </div>
+          </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block" />
@@ -278,29 +385,14 @@
             </div>
 
             <!-- Content Row -->
+
+
+
+
+
             <div class="row">
               <!-- Earnings (Monthly) Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
-                        >
-                          LEAVES
-                        </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                          0
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
 
               <!-- Earnings (Monthly) Card Example -->
               <div class="col-xl-3 col-md-6 mb-4">
@@ -311,7 +403,29 @@
                         <div
                           class="text-xs font-weight-bold text-success text-uppercase mb-1"
                         >
-                          OVERTIME APPROVED
+                          EMPLOYEES
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          0
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-user fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                        >
+                          Present
                         </div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                           0
@@ -332,9 +446,33 @@
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div
+                          class="text-xs font-weight-bold text-success text-uppercase mb-1"
+                        >
+                          Absent
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          0
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-exclamation-triangle fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
                           class="text-xs font-weight-bold text-info text-uppercase mb-1"
                         >
-                          OVERTIME PENDING
+                          Leave
                         </div>
                         <div class="row no-gutters align-items-center">
                           <div class="col-auto">
@@ -347,31 +485,145 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <i class="fas fa-clock fa-2x text-gray-300"></i>
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
               <!-- Pending Requests Card Example -->
             </div>
 
             <!-- Content Row -->
 
+
             <div class="row">
               <!-- Area Chart -->
-              <div class="col-xl-8 col-lg-7">
-                <div class="card shadow mb-4">
-                  <!-- Card Header - Dropdown -->
 
-                  <!-- Card Body -->
-                </div>
-              </div>
-
-              <!-- Pie Chart -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card ctm-border-radius shadow-sm grow">
+                            <div class="card-header">
+<h4 class="card-title mb-0 d-inline-block">Upcoming Leave</h4>
+<a href="leave.html" class="d-inline-block float-right text-primary"><i class="fa fa-suitcase"></i></a>
+</div>
+                            <div class="card-body recent-activ">
+            <div class="recent-comment">
+            <a href="javascript:void(0)" class="dash-card text-danger">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
             </div>
-            <div class="calendar">
+            <div class="dash-card-content">
+            <h6 class="mb-0">Mon, 16 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            <hr>
+            <a href="javascript:void(0)" class="dash-card text-primary">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
+            </div>
+            <div class="dash-card-content">
+            <h6 class="mb-0">Fri, 20 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            <hr>
+            <a href="javascript:void(0)" class="dash-card text-primary">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
+            </div>
+            <div class="dash-card-content">
+            <h6 class="mb-0">Wed, 25 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            <hr>
+            <a href="javascript:void(0)" class="dash-card text-primary">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
+            </div>
+            <div class="dash-card-content">
+            <h6 class="mb-0">Fri, 27 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            <hr>
+            <a href="javascript:void(0)" class="dash-card text-primary">
+            <div class="dash-card-container">
+            <div class="dash-card-icon">
+            <i class="fa fa-suitcase"></i>
+            <span> Juan Dela Cruz</span>
+            </div>
+            <div class="dash-card-content">
+            <h6 class="mb-0">Tue, 31 Dec 2019</h6>
+            </div>
+            </div>
+            </a>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex">
+
+            <div class="card flex-fill team-lead shadow-sm grow">
+            <div class="card-header">
+            <h4 class="card-title mb-0 d-inline-block">Team Leads </h4>
+            <a href="employees.html" class="dash-card float-right mb-0 text-primary">Manage Team </a>
+            </div>
+            <div class="card-body">
+            <div class="media mb-3">
+            <div class="e-avatar avatar-online mr-3"><img src="assets/img/profiles/img-6.jpg" alt="Profile avatar" class="img-fluid"></div>
+            <div class="media-body">
+            <h6 class="m-0">Employee name</h6>
+            <p class="mb-0 ctm-text-sm">PHP</p>
+            </div>
+            </div>
+            <hr>
+            <div class="media mb-3">
+            <div class="e-avatar avatar-online mr-3"><img class="img-fluid" src="assets/img/profiles/img-5.jpg" alt="Profile avatar"></div>
+            <div class="media-body">
+            <h6 class="m-0">Employee name</h6>
+            <p class="mb-0 ctm-text-sm">Design</p>
+            </div>
+            </div>
+            <hr>
+            <div class="media mb-3">
+            <div class="e-avatar avatar-online mr-3"><img src="assets/img/profiles/img-4.jpg" alt="Profile avatar" class="img-fluid"></div>
+            <div class="media-body">
+            <h6 class="m-0">Employee name</h6>
+            <p class="mb-0 ctm-text-sm">IOS</p>
+            </div>
+            </div>
+            <hr>
+            <div class="media mb-3">
+            <div class="e-avatar avatar-online mr-3"><img class="img-fluid" src="assets/img/profiles/img-3.jpg" alt="Profile avatar"></div>
+            <div class="media-body">
+            <h6 class="m-0">Employee name</h6>
+            <p class="mb-0 ctm-text-sm">Android</p>
+            </div>
+            </div>
+            <hr>
+            <div class="media">
+            <div class="e-avatar avatar-offline mr-3"><img class="img-fluid" src="assets/img/profiles/img-2.jpg" alt="Profile avatar"></div>
+            <div class="media-body">
+            <h6 class="m-0">Employee name</h6>
+            <p class="mb-0 ctm-text-sm">Business</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex">
+             <div class="calendar">
               <header class="mainHead">
                 <h1>July 2022</h1>
               </header>
@@ -442,17 +694,15 @@
                 <li class="column light weekend">3</li>
               </ul>
 
-              <!-- row 3-9 -->
-              <ul class="start">
-                <li class="column light">4</li>
-                <li class="column light">5</li>
-                <li class="column light">6</li>
-                <li class="column light">7</li>
-                <li class="column light">8</li>
-                <li class="column light weekend">9</li>
-                <li class="column light weekend">10</li>
-              </ul>
+              
+
+
+
+
+              <!-- Pie Chart -->
             </div>
+          
+           
 
             <!-- Content Row -->
             <div class="row">
@@ -472,6 +722,8 @@
           </div>
           <!-- /.container-fluid -->
         </div>
+      </div>
+      
         <!-- End of Main Content -->
 
         <!-- Footer -->
